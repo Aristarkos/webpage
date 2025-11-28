@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Technical Projects – Arno Elomaa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                   "Helvetica Neue", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      color: #111;
+    }
+
+    header {
+      padding: 16px 24px;
+      border-bottom: 1px solid #e5e5e5;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    nav a { 
+      margin-left: 16px; 
+      text-decoration: none; 
+      color: #333; 
+    }
+
+    nav a:hover { text-decoration: underline; }
+
+    main {
+      max-width: 800px;
+      margin: 48px auto;
+      padding: 0 16px;
+    }
+
+    h1 { 
+      font-size: 2.2rem; 
+      margin-bottom: 24px; 
+    }
+
+    .project {
+      border: 1px solid #e5e5e5;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 8px 14px;
+      border: 1px solid #111;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #111;
+      font-size: 0.9rem;
+    }
+
+    .btn:hover {
+      background: #111;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="site-name">Arno Elomaa</div>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/about/">About</a>
+    <a href="/projects/">Projects</a>
+    <a href="/blog/">Blog</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Technical Projects</h1>
+
+  <!-- PROJECT 1: n8n automation -->
+  <div class="project">
+    <h2>Derivative Alpha Automation</h2>
+    <p>
+      A lightweight automation built with n8n and Python to explore market themes
+      and generate derivative ideas. The workflow collects data, scores it and
+      forwards the most interesting signals for review.
+    </p>
+    <a class="btn" href="https://github.com/Aristarkos/Derivative-Alpha-Company-Analyzing-Automation" target="_blank">
+      View on GitHub →
+    </a>
+  </div>
+
+  <!-- PROJECT 2: Aalto spinoff taxation analysis -->
+  <div class="project">
+    <h2>Aalto University spinoffs taxation impact analysis</h2>
+    <p>
+      A data analysis project built in Python using Google Colab. The notebook combines
+      corporate tax data from the past ten years (vero.fi) with Aalto spinoff companies
+      and analyzes how much income tax these firms have generated.
+    </p>
+    <a class="btn" href="https://github.com/Aristarkos/university-spinoffs-taxation-impact-analysis" target="_blank">
+      View on GitHub →
+    </a>
+  </div>
+
+  <!-- PROJECT 3: Parallel Zip -->
+  <div class="project">
+    <h2>Parallel Zip</h2>
+    <p>
+      A multi-threaded file compression tool written in C for the Operating Systems
+      and Systems Programming course. Uses POSIX threads and run-length encoding
+      to improve performance compared to the single-threaded tool.
+    </p>
+    <a class="btn" href="https://github.com/Aristarkos/Operating-Systems-Parallel-Zip" target="_blank">
+      View on GitHub →
+    </a>
+  </div>
+
+</main>
+
+</body>
+</html>
