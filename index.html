@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Arno Elomaa</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                   "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+      background-color: #ffffff;
+      color: #111111;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      width: 100%;
+      padding: 16px 24px;
+      border-bottom: 1px solid #e5e5e5;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .site-name {
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      font-size: 1.1rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333333;
+      margin-left: 16px;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 16px;
+    }
+
+    .hero {
+      max-width: 720px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .hero-title {
+      font-size: clamp(2.4rem, 5vw, 3.2rem);
+      font-weight: 600;
+      letter-spacing: -0.05em;
+    }
+
+    .hero-tagline {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #555555;
+      max-width: 520px;
+    }
+
+    .hero-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 8px;
+    }
+
+    .hero-links a {
+      text-decoration: none;
+      font-size: 0.95rem;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+      padding-bottom: 2px;
+      color: #111111;
+    }
+
+    .hero-links a:hover {
+      border-bottom-color: #111111;
+    }
+
+    footer {
+      padding: 12px 24px;
+      border-top: 1px solid #f0f0f0;
+      font-size: 0.8rem;
+      color: #777777;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+      }
+      nav a {
+        margin-left: 0;
+        margin-right: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="site-name">Arno Elomaa</div>
+
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about/">About</a>
+      <a href="/projects/">Projects</a>
+      <a href="/blog/">Blog</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      
+      <h1 class="hero-title">Arno Elomaa</h1>
+
+      <p class="hero-tagline">
+        Currently working on Nexlead on 360° outbound B2B sales and studying Industrial Engineering and AI at NYU.
+      </p>
+
+      <div class="hero-links">
+        <a href="/projects/">View featured projects →</a>
+        <a href="/about/">More about me →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    This site is a simple static page hosted on GitHub Pages.
+  </footer>
+
+</body>
+</html>
