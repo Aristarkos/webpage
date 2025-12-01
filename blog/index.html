@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Blog – Arno Elomaa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                   "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+      background: #ffffff;
+      color: #111111;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      width: 100%;
+      padding: 16px 24px;
+      border-bottom: 1px solid #e5e5e5;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .site-name {
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      font-size: 1.1rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333333;
+      margin-left: 16px;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      flex: 1;
+      max-width: 800px;
+      margin: 48px auto;
+      padding: 0 16px;
+      line-height: 1.65;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 16px;
+      letter-spacing: -0.03em;
+    }
+
+    .note {
+      margin-top: 16px;
+      color: #555555;
+    }
+
+    footer {
+      padding: 12px 24px;
+      border-top: 1px solid #f0f0f0;
+      font-size: 0.8rem;
+      color: #777777;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+      }
+
+      nav a {
+        margin-left: 0;
+        margin-right: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="site-name">Arno Elomaa</div>
+    <nav>
+      <a href="/webpage/">Home</a>
+      <a href="/webpage/about/">About</a>
+      <a href="/webpage/projects/">Projects</a>
+      <a href="/webpage/blog/">Blog</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Blog</h1>
+
+    <p class="note">
+      No posts yet — I’ll start writing when I have something useful to say.
+    </p>
+  </main>
+
+  <footer>
+    When the why is clear, the how is easy.
+  </footer>
+
+</body>
+</html>
