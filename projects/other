@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Other Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                   "Helvetica Neue", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      color: #111;
+    }
+
+    header {
+      padding: 16px 24px;
+      border-bottom: 1px solid #e5e5e5;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    nav a { 
+      margin-left: 16px; 
+      text-decoration: none; 
+      color: #333; 
+    }
+
+    nav a:hover { 
+      text-decoration: underline; 
+    }
+
+    main {
+      max-width: 800px;
+      margin: 48px auto;
+      padding: 0 16px;
+    }
+
+    h1 { 
+      font-size: 2.2rem; 
+      margin-bottom: 24px; 
+    }
+
+    .project {
+      border: 1px solid #e5e5e5;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    p {
+      color: #555;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="site-name">Arno Elomaa</div>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/about/">About</a>
+    <a href="/projects/">Projects</a>
+    <a href="/blog/">Blog</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Other projects</h1>
+
+  <div class="project">
+    <p>This will be updated soon.</p>
+  </div>
+</main>
+
+</body>
+</html>
